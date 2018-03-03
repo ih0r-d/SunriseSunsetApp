@@ -12,11 +12,19 @@ import com.teamvoy.task.sunrisesunsetapp.R;
 
 
 public class PlaceFragment extends Fragment {
-    private TextView placeNameTV, placeAddress;
+    private TextView place_name, place_address;
+
 
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.place_layout,container,false);
+
+        View view = inflater.inflate(R.layout.place_fragment, container, false);
+
+
+
+        return view;
     }
+
+
 }

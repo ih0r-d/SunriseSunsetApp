@@ -12,6 +12,8 @@ public class SunriseSunsetAPIResponse {
     private String astronomical_twilight_begin;
     private String astronomical_twilight_end;
 
+    private String status;
+
     private static final String STATUS_OK = "OK";
     private static final String STATUS_INVALID_REQUEST = "INVALID_REQUEST";
     private static final String STATUS_INVALID_DATE = "INVALID_DATE";

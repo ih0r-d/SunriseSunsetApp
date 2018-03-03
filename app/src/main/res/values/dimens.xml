@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="sunrise_sunset_list_item_width">120</dimen>
+    <dimen name="icon_size">100</dimen>
+    <dimen name="result_text_size">16sp</dimen>
+</resources>
