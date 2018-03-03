@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.teamvoy.task.sunrisesunsetapp.activities.MainActivity">
+
+    <Button
+        android:id="@+id/getPickerPlace"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="get place" />
+
+    <!-- android:layout_alignEnd="@+id/placeNameTV"
+        android:layout_below="@+id/placeNameTV"-->
+
+    <fragment
+        android:id="@+id/placeFragment"
+        android:name="com.teamvoy.task.sunrisesunsetapp.fragments.PlaceFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/getPickerPlace"
+        tools:layout="@layout/place_layout"
+
+        />
+
+
+    <fragment
+        android:id="@+id/sunriseSunsetFragment"
+        android:name="com.teamvoy.task.sunrisesunsetapp.fragments.SunriseSunsetFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/getPickerFragment"
+        android:layout_marginTop="150dp"
+        tools:layout="@layout/sunrise_sunset_layout"
+        tools:ignore="UnknownId" />
+
+
+</RelativeLayout>
