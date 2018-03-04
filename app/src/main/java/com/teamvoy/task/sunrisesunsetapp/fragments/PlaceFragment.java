@@ -21,6 +21,8 @@ public class PlaceFragment extends Fragment {
 
         View view = inflater.inflate(R.layout.place_fragment, container, false);
 
+        place_name = view.findViewById(R.id.place_name);
+        place_address = view.findViewById(R.id.place_address);
 
 
         return view;

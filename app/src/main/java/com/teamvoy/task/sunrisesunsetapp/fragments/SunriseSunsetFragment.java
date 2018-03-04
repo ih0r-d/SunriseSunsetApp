@@ -18,7 +18,7 @@ public class SunriseSunsetFragment extends Fragment {
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.sunrise_sunset_list_fragment, container, false);
+        return inflater.inflate(R.layout.list_fragment, container, false);
 
     }
 
