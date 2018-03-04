@@ -18,7 +18,10 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         place_button = findViewById(R.id.place_picker_button);
         viewPager =  findViewById(R.id.view_pager);
+//        viewPager.setAdapter();
+
         tabLayout = findViewById(R.id.tabs);
+        tabLayout.setupWithViewPager(viewPager);
 
 
 //        ViewPager viewPager = (ViewPager) findViewById(R.id.view_pager);
