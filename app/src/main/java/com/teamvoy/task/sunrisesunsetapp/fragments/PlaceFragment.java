@@ -6,13 +6,12 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.TextView;
 
 import com.teamvoy.task.sunrisesunsetapp.R;
+import com.teamvoy.task.sunrisesunsetapp.models.CurrentPlace;
 
 
 public class PlaceFragment extends Fragment {
-    private TextView place_name, place_address;
 
 
     @Nullable
@@ -21,8 +20,7 @@ public class PlaceFragment extends Fragment {
 
         View view = inflater.inflate(R.layout.place_fragment, container, false);
 
-        place_name = view.findViewById(R.id.place_name);
-        place_address = view.findViewById(R.id.place_address);
+        CurrentPlace place = new CurrentPlace();
 
 
         return view;

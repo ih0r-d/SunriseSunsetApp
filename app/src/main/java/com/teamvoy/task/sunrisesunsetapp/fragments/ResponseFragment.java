@@ -12,13 +12,13 @@ import android.widget.TextView;
 import com.teamvoy.task.sunrisesunsetapp.R;
 
 
-public class SunriseSunsetFragment extends Fragment {
+public class ResponseFragment extends Fragment {
     private TextView sunriseTV, sunsetTV, dayLengthTV;
 
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.list_fragment, container, false);
+        return inflater.inflate(R.layout.response_list, container, false);
 
     }
 

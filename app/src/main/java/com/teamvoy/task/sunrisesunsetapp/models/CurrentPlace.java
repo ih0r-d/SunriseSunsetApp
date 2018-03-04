@@ -12,7 +12,7 @@ import lombok.ToString;
 @NoArgsConstructor
 @EqualsAndHashCode
 @ToString
-public class Place {
+public class CurrentPlace {
     private String placeName;
     private String placeAddress;
     private double latitude;
