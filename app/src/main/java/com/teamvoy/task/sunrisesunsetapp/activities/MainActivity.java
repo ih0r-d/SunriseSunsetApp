@@ -5,32 +5,35 @@ import android.os.Bundle;
 import android.support.design.widget.TabLayout;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.view.View.OnClickListener;
-import android.widget.Button;
 
 import com.teamvoy.task.sunrisesunsetapp.R;
+import com.teamvoy.task.sunrisesunsetapp.adapters.TabPagerAdapter;
 import com.teamvoy.task.sunrisesunsetapp.utils.PlaceUtil;
 
 public class MainActivity extends AppCompatActivity implements OnClickListener {
     private ViewPager viewPager;
     private TabLayout tabLayout;
-    private Button place_button;
-
+    private Toolbar toolbar;
     private static final int PLACE_PICKER_REQUEST = 1;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        place_button = findViewById(R.id.place_picker_button);
-        place_button.setOnClickListener(this);
+//        place_button = findViewById(R.id.place_picker_button);
+//        place_button.setOnClickListener(this);
 
         viewPager = findViewById(R.id.view_pager);
-//        viewPager.setAdapter();
+        viewPager.setAdapter(new TabPagerAdapter(getSupportFragmentManager(),this));
 
         tabLayout = findViewById(R.id.tabs);
         tabLayout.setupWithViewPager(viewPager);
+
+        toolbar = findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);
 
 
     }

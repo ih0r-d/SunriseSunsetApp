@@ -1,0 +1,12 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.teamvoy.task.sunrisesunsetapp.activities.MainActivity">
+    <item
+        android:id="@+id/action_picker"
+        android:icon="@android:drawable/ic_menu_mylocation"
+        android:orderInCategory="2"
+        android:title="@string/action_picker"
+        app:showAsAction="always" />
+
+</menu>

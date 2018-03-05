@@ -1,4 +1,7 @@
 <resources>
     <string name="app_name">SunriseSunsetApp</string>
     <string name="my_key_api">AIzaSyAs8aobqiXqTObHsnaseZCF31s4TeHZIHo</string>
+    <string name="place_detail">Place information</string>
+    <string name="response_info">Sunrise Sunset Info</string>
+    <string name="action_picker">get place</string>
 </resources>
