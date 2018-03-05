@@ -21,7 +21,6 @@
             android:paddingBottom="10dp"
             android:paddingLeft="10dp"
             android:paddingRight="10dp"
-            android:text="TEST"
             android:textColor="@color/colorPrimary"
             android:textSize="@dimen/result_text_size" />
 
@@ -34,7 +33,6 @@
             android:paddingBottom="10dp"
             android:paddingLeft="10dp"
             android:paddingRight="10dp"
-            android:text="TEST"
             android:textColor="@color/colorPrimary"
             android:textSize="@dimen/result_text_size" />
         <!---->

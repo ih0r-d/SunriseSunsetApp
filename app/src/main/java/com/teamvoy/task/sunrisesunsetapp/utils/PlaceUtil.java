@@ -40,4 +40,10 @@ public class PlaceUtil {
         currentPlace.setLongitude(longitude);
         return currentPlace;
     }
+
+//
+//    public static void setPlaceInfo(Bundle placeInfo) {
+////        Fragment
+//    }
+
 }
