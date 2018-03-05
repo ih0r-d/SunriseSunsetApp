@@ -5,18 +5,21 @@ import lombok.EqualsAndHashCode;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
-import lombok.ToString;
 
 @Getter
 @Setter
 @NoArgsConstructor
 @EqualsAndHashCode
-@ToString
 public class CurrentPlace {
-    private String placeName;
-    private String placeAddress;
+    private CharSequence placeName;
+    private CharSequence placeAddress;
     private double latitude;
     private double longitude;
 
+
+    CurrentPlace(CharSequence placeName, CharSequence placeAddress) {
+        this.placeName = placeName;
+        this.placeAddress = placeAddress;
+    }
 
 }

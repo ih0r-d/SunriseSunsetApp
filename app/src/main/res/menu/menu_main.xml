@@ -5,7 +5,7 @@
     <item
         android:id="@+id/action_picker"
         android:icon="@android:drawable/ic_menu_mylocation"
-        android:orderInCategory="2"
+        android:orderInCategory="1"
         android:title="@string/action_picker"
         app:showAsAction="always" />
 
